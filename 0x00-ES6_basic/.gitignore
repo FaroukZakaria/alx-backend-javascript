@@ -1,4 +1,2 @@
 /node_modules/
-babel.config.js
-package.json
-.eslintrc.js
+/npm/
