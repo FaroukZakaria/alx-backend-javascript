@@ -38,7 +38,6 @@ export default class HolbertonCourse {
 
   _Check(type, required) {
     /* eslint-disable class-methods-use-this */
-    /* eslint-disable valid-typeof */
     if (required === 'array') {
       if (Array.isArray(type)) {
         for (const i of type) {
