@@ -1,4 +1,5 @@
 export default class HolbertonCourse {
+  /* eslint-disable no-underscore-dangle */
   constructor(name, length, students) {
     this._Check(name, 'string');
     this._Check(length, 'number');
@@ -36,6 +37,8 @@ export default class HolbertonCourse {
   }
 
   _Check(type, required) {
+    /* eslint-disable class-methods-use-this */
+    /* eslint-disable valid-typeof */
     if (required === 'array') {
       if (Array.isArray(type)) {
         for (const i of type) {
