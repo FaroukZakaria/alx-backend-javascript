@@ -8,7 +8,8 @@ process.stdin.on('data', (data) => {
   if (input.length > 0) {
     console.log('Your name is:', input);
   }
-
-  console.log('This important software is now closing');
+  if (!process.stdin.isTTY) {
+    console.log('This important software is now closing');
+  }
   process.exit();
 });
